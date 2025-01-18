@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #ededed;
+        background: #111;
+      }
+
+      .service {
+        padding: 100px 0;
+        font-family: "poppins", sans-serif;
+      }
+
+      .max-width {
+        max-width: 1300px;
+        padding: 0 45px;
+        margin: auto;
+      }
+
+      .max-width h1 {
+        text-align: center;
+        position: relative;
+        font-size: 40px;
+        margin-bottom: 60px;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+
+      .max-width h1::after {
+        content: "";
+        position: absolute;
+        width: 170px;
+        height: 3px;
+        background: #ededed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+      }
+
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .card {
+        padding: 50px 25px;
+        width: calc(26% - 20px);
+        background: #222;
+        border-radius: 6px;
+        user-select: none;
+        text-align: center;
+        transition: all o.3s ease;
+      }
+
+      .card:hover {
+        background-color: #00abf0;
+      }
+      .box {
+        transition: all 0.3s ease;
+      }
+
+      .card:hover .box {
+        transition: scale(1.05);
+      }
+
+      .box i {
+        font-size: 50px;
+        color: #00abf0;
+        transition: all 0.3s ease;
+      }
+
+      .card:hover .box i {
+        color: #fff;
+      }
+
+      .box h3 {
+        font-size: 25px;
+        padding: 10px 0 7px;
+      }
+
+      @media screen and (max-width: 1190px) {
+        .max-width {
+          padding: 0.25px;
+        }
+        .card {
+          width: calc(50% - 10px);
+          margin-bottom: 20px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="service">
+      <div class="max-width">
+        <h1>Our Service</h1>
+        <div class="content">
+          <div class="card">
+            <div class="box">
+              <i class="bx bx-desktop"></i>
+              <h3>Web Development</h3>
+              <p>
+                We specialize in creating stunning, functional, and
+                user-friendly websites that deliver outstanding digital
+                experiences. Whether you're a startup, small business, or
+                enterprise, our web development services are tailored to meet
+                your unique needs and drive your success online.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="bx bx-code-alt"></i>
+              <h3>Graphics Design</h3>
+              <p>
+                We also specialize in creating visual content for a company,
+                such as logos, branding, and marketing materials. These services
+                can be used for print and digital media, advertising, and more.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="bx bx-mobile"></i>
+              <h3>App Development</h3>
+              <p>
+                In the mobile app development industry we provide end-to-end
+                organization, conceptualization, design, optimization, and
+                maintenance of your mobile app project. we are equipped to take
+                a simple idea and turn it into a functional product that could
+                be your next big moneymaker.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="bx bx-line-chart"></i>
+              <h3>Advertisement</h3>
+              <p>
+                When it comes to business, or organisation advertisement, we are
+                the name you can trust.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT APP</title>
+    <style>
+      body{
+        background-color: black;
+        color: #fff;
+      }
+    </style>
+</head>
+<body>
+    <script>
+        function CBT() {
+          var Q1 = document.myForm.q1.value;
+          var Q2 = document.myForm.q2.value;
+          var Q3 = document.myForm.q3.value;
+          var Q4 = document.myForm.q4.value;
+          var Q5 = document.myForm.q5.value;
+          var count = 0;
+          if ((Q1 = "b")) {
+            count++;
+          }
+          if ((Q2 = "a")) {
+            count++;
+          }
+          if ((Q3 = "c")) {
+            count++;
+          }
+          if ((Q4 = "b")) {
+            count++;
+          }
+          if ((Q5 = "a")) {
+            count++;
+          }
+          alert("YOUR SCORE " + count ).innerHTML = count;
+        }
+      </script>
+    </head>
+    <body>
+      <h3>COMPUTER EXAM</h3>
+      <form name="myForm">
+        Q1. What is HTML used for? <br />
+        A. <input type="radio" name="q1" value="a" /> PLAYING GAMES <br />
+        B. <input type="radio" name="q1" value="b" /> DESIGNING WEBSITS <br />
+        C. <input type="radio" name="q1" value="c" /> BUILDING APPS <br /><br />
+  
+        Q2. What kind of language is JavaScript? <br />
+        A. <input type="radio" name="q2" value="a" />PROGRAMING LANGUAGE <br />
+        B. <input type="radio" name="q2" value="b" />STYLING LANGUAGE <br />
+        C. <input type="radio" name="q2" value="c" />MARKUP LANGUAGE <br /><br />
+  
+        Q3. The following are types of computer execpt? <br />
+        A. <input type="radio" name="q3" value="a" />RAM <br />
+        B. <input type="radio" name="q3" value="a" />HARD DRIVE <br />
+        C. <input type="radio" name="q3" value="a" />MANGO <br /><br />
+  
+        Q4. What does HTML stands for? <br />
+        A. <input type="radio" name="q4" value="a" />HYPERTEXT MAKEUP LANGUAGE
+        <br />
+        B. <input type="radio" name="q4" value="B" />HYPERTEXT MARKUP LANGUAGE
+        <br />
+        C. <input type="radio" name="q4" value="c" />HYPERTEXT MUSIC LANGUAGE
+        <br /><br />
+  
+        Q5. What does CSS stands for? <br />
+        A. <input type="radio" name="q5" value="a" />CASCADING STYLE SHEET <br />
+        B. <input type="radio" name="q5" value="b" />CASE STANDER SHEET <br />
+        C. <input type="radio" name="q5" value="c" />CALCULATE STYLE SHEET
+        <br /><br />
+  
+        <input type="submit" value="SUBMIT EXAM" onclick="CBT()" />
+      </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //USING BMI
+      var weight = prompt("ENTER YOUR WEIGHT");
+      var height = prompt("ENTER YOUR HEIGHT");
+      var BMI = weight / height ** 2;
+      alert(BMI);
+      if (BMI > 1.9) {
+        alert("OBESSED");
+      } else if (BMI > 1.4 && BMI < 2.0) {
+        alert("OVER WEIGHT");
+      } else if (BMI > 0.9 && BMI < 1.6) {
+        alert("MODERATE WEIGHT");
+      } else if (BMI < 1.0) {
+        alert("UNDER WEIGHT");
+      }
+    </script>
+  </body>
+</html>

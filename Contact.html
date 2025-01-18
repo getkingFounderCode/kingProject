@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+      }
+
+      .contact {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        background: url(myimg.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .contact .Content {
+        max-width: 1100px;
+        text-align: center;
+      }
+      .contact .Content h1 {
+        font-size: 39px;
+        font-weight: 600;
+        color: #00abf0;
+        margin-bottom: 20px;
+      }
+
+      .contact .Content p {
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 28px;
+        color: #fff;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .container .contactInfo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container .contactInfo .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+      }
+
+      .container .contactInfo .box .icon {
+        min-width: 60px;
+        height: 60px;
+        background: #ededed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+      }
+
+      .container .contactInfo .box .text {
+        display: flex;
+        margin-left: 20px;
+        font-size: 19px;
+        color: #ededed;
+        flex-direction: column;
+        font-weight: 400;
+      }
+
+      .container .contactInfo .box .text h3 {
+        color: #00abf0;
+        font-weight: 500;
+      }
+
+      .contactForm {
+        width: 40%;
+        padding: 40px;
+        background: #ededed;
+      }
+
+      .contactForm h2 {
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .contactForm .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .contactForm .inputBox input,
+      .contactForm .inputBox textarea {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+      }
+
+      .contactForm .inputBox span {
+        position: absolute;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        left: 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+      }
+
+      .contactForm .inputBox input:focus ~ span,
+      .contactForm .inputBox input:valid ~ span,
+      .contactForm .inputBox textarea:focus ~ span,
+      .contactForm .inputBox textarea:valid ~ span {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+      }
+
+      .contactForm .inputBox input[type="submit"] {
+        width: 100px;
+        background: #00abf0;
+        border: none;
+        color: #ededed;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      @media (max-width: 991px) {
+      }
+      a {
+        font-size: 28px;
+        font-weight: 600;
+        text-decoration: none;
+        margin-top: 130px;
+      }
+
+      a:hover {
+        color: #00abf0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="contact">
+      <div class="Content">
+        <h1>Contact Us</h1>
+        <p>
+          Welcom to my contact page! I'm exicted to hear from you. Whether you
+          have questions about web development, need a quote, or want to discuss
+          a project, feel free to reach out. I'm dedicated to delivering
+          high-quality web solutions tailored to your needs. Lets connect and
+          bring your ideas to life.
+        </p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon"><i class="bx bxs-map"></i></div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>101 King Founder Estate Lekki Island, Lagos</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="bx bxs-phone"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+234(0)8135935886</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="bx bx-envelope"></i></div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>kingdanielonwuka@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type your Message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <a href="Home.html">Back to home</a>
+    </section>
+  </body>
+</html>
