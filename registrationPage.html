@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <style>
+      body {
+        background: #000;
+      }
+
+      h3 {
+        margin-top: -23px;
+        margin-left: -23px;
+        font-weight: 500;
+      }
+      fieldset {
+        border: 1px solid #888;
+        border-radius: 10px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 15px;
+      }
+      form {
+        background: #fff;
+        max-width: 350px;
+        padding: 28px;
+        margin: auto;
+      }
+
+      .a {
+        margin-bottom: 15px;
+      }
+
+      .input {
+        width: 180px;
+        margin-left: 120px;
+        margin-top: -15px;
+        display: flex;
+        height: 25px;
+       
+      }
+      .btn {
+        margin-top: 15px;
+        margin-bottom: -15px;
+        margin-left: 250px;
+        height: 30px;
+        width: 100px;
+        border: 0;
+        background: rgb(201, 7, 7);
+        color: #fff;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h3>Create a System Account</h3>
+      <fieldset class="a">
+        <legend>Personal Information</legend>
+        First Name <input class="input" type="text" /><br /><br />
+        Last Name <input class="input" type="text" />
+      </fieldset>
+      <fieldset class="b">
+        <legend>Login Information</legend>
+        Username <input class="input" type="text" /><br /><br />
+        Password <input class="input" type="text" /><br /><br />
+        Verify Password <input class="input" type="text" />
+      </fieldset>
+      <input class="btn" type="submit" value="Register" />
+    </form>
+  </body>
+</html>
