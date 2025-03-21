@@ -3,136 +3,506 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Run It Up</title>
+    <title>Top Boy</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <nav>
-      <a href="/"><img src="rit.jpg" width="100" alt="" /> </a>
-      <div class="nav-country">
-        <i style="font-size: 25px; color: #e5e5e5" class="bx bxs-map"></i>
-        <div>
-          <p>Fast delivery</p>
-          <h1>World wide</h1>
-        </div>
-      </div>
-      <div class="nav-search">
-        <div class="nav-search-gategory">
-          <p>All</p>
-          <i class="bx bxs-down-arrow"></i>
-        </div>
-        <input
-          type="text"
-          class="nav-search-input"
-          placeholder="Search Run it Up"
-        />
-
-        <i id="nav-search-icon" class="bx bx-search-alt-2"></i>
-      </div>
-      <div class="nav-language">
-        <select>
-        <option style="font-weight: 600;"><i class="bx bxs-down-arrow">USA</option> 
-        <option style="font-weight: 600;">UK</option>
-        <option>Chaina</option>
-        <option>Canada</option>
-        <p>EN</p>
-      </select>
-      </div>
-      <div class="nav-text">
-        <p>Hello, Sign in</p>
-        <h1>Account & List <i class="bx bxs-down-arrow"></i></h1>
-      </div>
-      <div class="nav-text">
-        <p>Return</p>
-        <h1>& Orders</h1>
-      </div>
-      <a href="" class="nav-cart">
-        <i style="font-size: 35px; color: #ffd64f" class="bx bx-cart-add"></i>
-        <h1>Cart</h1>
-      </a>
-    </nav>
-    <div class="nav-bottom">
-      <div>
-        <i style="font-size: 18px" class="bx bx-menu"></i>
-        <p>All</p>
-      </div>
-      <p>Today's Deal</p>
-      <p>Customer Service</p>
-      <p>Registry</p>
-      <p>Gift Card</p>
-      <p>Sell</p>
-    </div>
-
-    <div class="header-slider">
-      <a href="#" class="control_prev">&#129144;</a>
-      <a href="#" class="control_next">&#129146;</a>
-      <ul>
-        <img src="header4.jpg" class="header-img" alt="" />
-        <img src="header2.jpg" class="header-img" alt="" />
-        <img src="header3.jpg" class="header-img" alt="" />
-        <img src="header5.jpg" class="header-img" alt="" />
-        <img src="header1.jpg" class="header-img" alt="" />
-        <img src="header6.jpg" class="header-img" alt="" />
+    <header>
+      <a href="#" class="logo">Top.Boy</a>
+      <ul class="navlist">
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">On Sale</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </div>
-    <div class="box-row header-box">
-      <div class="box-col">
-        <h3>Still Life Rendering Jacket</h3>
-        <img src="clothing-1.png" width="320px" height="200px" alt="" />
-        <a href="/">Shop More</a>
+
+      <div class="nav-right">
+        <a href="#"><i class="ri-search-line"></i></a>
+        <a href="#"><i class="ri-shopping-cart-line"></i></a>
+        <a href="#"><i class="ri-user-line"></i></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
       </div>
-      <div class="box-col">
-        <h3>Graphic Tshirt Trendy</h3>
-        <img src="clothing-2.png" width="320px" height="200px" alt="" />
-        <a href="/">Shop More</a>
+    </header>
+    <section class="home">
+      <div class="home-text" data-aos="fade-right">
+        <h6>New Arrivals</h6>
+        <h1>
+          New Arrivals <br />
+          ready to rock
+        </h1>
+        <p>
+          Explore the thrilling world of top boy.discover intense of fashion
+          feel the adrenaline rush.get ready for non-stop action.join the
+          journey now.
+        </p>
+        <a href="#" class="btn">
+          Shop now
+          <i class="ri-arrow-right-line"></i>
+        </a>
       </div>
-      <div class="box-col">
-        <h3>Elegant Woolen Jacket Men</h3>
-        <img src="clothing-3.png" width="320px" height="200px" alt="" />
-        <a href="/">Shop More</a>
-      </div>
-      <div class="box-col">
-        <h3>Winter Hoody</h3>
-        <img src="clothing-5.png" width="320px" height="200px" alt="" />
-        <a href="/">Shop More</a>
-      </div>
-   
-   
-      <div class="box-col">
-        <h3>Still Life Rendering Jacket</h3>
-        <img src="jacket1.jpg" width="320" height="200" alt="" />
-        <a href="/">Shop More</a>
-      </div>
-      <div class="box-col">
-        <h3>Graphic Tshirt Trendy</h3>
-        <img src="jacket2.jpg" width="320" height="200" alt="" />
-        <a href="/">Shop More</a>
-      </div>
-      <div class="box-col">
-        <h3>Elegant Woolen Jacket Men</h3>
-        <img src="jacket3.jpg" width="320" height="200" alt="" />
-        <a href="/">Shop More</a>
-      </div>
-      <div class="box-col">
-        <h3>Winter Hoody</h3>
-        <img src="jacket4.jpg" width="320" height="200" alt="" />
-        <a href="/">Shop More</a>
+    </section>
+
+    <div class="brands">
+      <div class="main-brands" data-aos="zoom-in">
+        <div class="brands-c">
+          <img src="img/g1.png" />
+        </div>
+
+        <div class="brands-c">
+          <img src="img/g2.png" />
+        </div>
+
+        <div class="brands-c">
+          <img src="img/g3.png" />
+        </div>
+
+        <div class="brands-c">
+          <img src="img/g4.png" />
+        </div>
+
+        <div class="brands-c">
+          <img src="img/g5.png" />
+        </div>
       </div>
     </div>
 
-    <div class="product-slider">
-      <h2>Best Sellers in Sport & Outdoors</h2>
-      <div class="product">
-        <img src="" alt="">
+    <section class="all-product">
+      <div class="center-text" data-aos="fade-down">
+        <h2>All Products</h2>
+      </div>
+
+      <div class="all-content" data-aos="zoom-in">
+        <div class="row">
+          <div class="row-img">
+            <img src="img/top1.jpg" width="300" height="300" />
+          </div>
+          <h3>T-shirt Available in Multiple colors</h3>
+          <div class="star">
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#">4.5/5</a>
+          </div>
+
+          <div class="row-in">
+            <div class="row-left">
+              <a href="#">
+                Add to cart
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+
+            <div class="row-right">
+              <h6>$150.00</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img
+              src="img/top2.jpg"
+              width="300"
+              height="300"
+              style="border: 1px solid var(--text-color)"
+            />
+          </div>
+          <h3>T-shirt Available in Multiple colors</h3>
+          <div class="star">
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#">4.5/5</a>
+          </div>
+
+          <div class="row-in">
+            <div class="row-left">
+              <a href="#">
+                Add to cart
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+
+            <div class="row-right">
+              <h6>$150.00</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img src="img/top3.jpg" width="300" height="300" />
+          </div>
+          <h3>T-shirt Available in Multiple colors</h3>
+          <div class="star">
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#">4.5/5</a>
+          </div>
+
+          <div class="row-in">
+            <div class="row-left">
+              <a href="#">
+                Add to cart
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+
+            <div class="row-right">
+              <h6>$150.00</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img src="img/top4.jpg" width="300" height="300" />
+          </div>
+          <h3>T-shirt Available in Multiple colors</h3>
+          <div class="star">
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#">4.5/5</a>
+          </div>
+
+          <div class="row-in">
+            <div class="row-left">
+              <a href="#">
+                Add to cart
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+
+            <div class="row-right">
+              <h6>$150.00</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img
+              src="img/top5.jpg"
+              width="300"
+              height="300"
+              style="border: 1px solid var(--text-color)"
+            />
+          </div>
+          <h3>T-shirt Available in Multiple colors</h3>
+          <div class="star">
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#">4.5/5</a>
+          </div>
+
+          <div class="row-in">
+            <div class="row-left">
+              <a href="#">
+                Add to cart
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+
+            <div class="row-right">
+              <h6>$150.00</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img src="img/top6.jpg" width="300" height="300" />
+          </div>
+          <h3>T-shirt Available in Multiple colors</h3>
+          <div class="star">
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#">4.5/5</a>
+          </div>
+
+          <div class="row-in">
+            <div class="row-left">
+              <a href="#">
+                Add to cart
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+
+            <div class="row-right">
+              <h6>$150.00</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img
+              src="img/top7.jpg"
+              width="300"
+              height="300"
+              style="border: 1px solid var(--text-color)"
+            />
+          </div>
+          <h3>T-shirt Available in Multiple colors</h3>
+          <div class="star">
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#">4.5/5</a>
+          </div>
+
+          <div class="row-in">
+            <div class="row-left">
+              <a href="#">
+                Add to cart
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+
+            <div class="row-right">
+              <h6>$150.00</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img
+              src="img/top8.jpg"
+              width="300"
+              height="300"
+              style="border: 1px solid var(--text-color)"
+            />
+          </div>
+          <h3>T-shirt Available in Multiple colors</h3>
+          <div class="star">
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#"><i class="ri-star-fill"></i></a>
+            <a href="#">4.5/5</a>
+          </div>
+
+          <div class="row-in">
+            <div class="row-left">
+              <a href="#">
+                Add to cart
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+
+            <div class="row-right">
+              <h6>$150.00</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="n-btn" data-aos="zoom-in">
+        <a href="#" class="btn2">View all</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-content" data-aos="fade-down">
+        <div class="box">
+          <div class="f-icon">
+            <i class="ri-bank-card-fill"></i>
+          </div>
+
+          <div class="f-text">
+            <h3>Cash on Delivery</h3>
+            <p>
+              You can pay for Cash on Delivery orders using cash at the time of
+              delivery
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="f-icon">
+            <i class="ri-truck-fill"></i>
+          </div>
+
+          <div class="f-text">
+            <h3>Free Shipping</h3>
+            <p>
+              FREE Shipping are only eligible for delivery Within Abuja.
+              Shipping accross other state will be charged
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="f-icon">
+            <i class="ri-customer-service-fill"></i>
+          </div>
+
+          <div class="f-text">
+            <h3>7 days return</h3>
+            <p>
+              Most items can be returned for a refund or replacement within 7
+              days of delivery as long as they are unused
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="selling">
+      <div class="center-text" data-aos="fade-down">
+        <h2>Best Seller</h2>
+      </div>
+
+      <div class="selling-content"  data-aos="zoom-in-up">
+        <div class="col">
+          <div class="col-img">
+            <img class="img" src="img/topX.png" height="350" />
+          </div>
+
+          <div class="col-icon">
+            <a href="#"><i class="ri-heart-line"></i></a>
+            <a href="#"><i class="ri-eye-line"></i></a>
+            <a href="#"><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-img">
+            <img class="img" src="img/boy2.jpg" height="350" />
+          </div>
+
+          <div class="col-icon">
+            <a href="#"><i class="ri-heart-line"></i></a>
+            <a href="#"><i class="ri-eye-line"></i></a>
+            <a href="#"><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-img">
+            <img class="img" src="img/boy1.jpg" height="350" />
+          </div>
+
+          <div class="col-icon">
+            <a href="#"><i class="ri-heart-line"></i></a>
+            <a href="#"><i class="ri-eye-line"></i></a>
+            <a href="#"><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-content"  data-aos="zoom-in">
+        <div class="newsletter-text">
+          <h2>Get On the List</h2>
+          <p>Sign up with your email address to recieve updates.</p>
+        </div>
+
+        <form action="">
+          <input type="email" placeholder="Enter your email..." required />
+          <input type="submit" value="subscribe" class="btnn" />
+        </form>
+      </div>
+    </section>
+
+    <section class="footer" data-aos="fade-down">
+      <div class="footer-box">
+        <h3>Company</h3>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Works</a>
+        <a href="#">Career</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>FAQ</h3>
+        <a href="#">Account</a>
+        <a href="#">Features</a>
+        <a href="#">Works</a>
+        <a href="#">Career</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Resources</h3>
+        <a href="#">Youtube Playlist</a>
+        <a href="#">Features</a>
+        <a href="#">Works</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Social</h3>
+        <div class="social">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/topboy__originals?igsh=c3gydW00MHBoc2g="
+            ><i class="ri-instagram-fill"></i
+          ></a>
+          <a target="_blank" href="https://wa.me/2349033595453"
+            ><i class="ri-whatsapp-fill"></i
+          ></a>
+          <a href="#"><i class="ri-tiktok-fill"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <div class="end-text">
+        <p>CopyRight 2025 By Klaf</p>
+      </div>
+
+      <div class="end-img">
+        <img src="img/p.png">
       </div>
     </div>
 
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1450,
+    });
+  </script>
   </body>
 </html>
-
-
